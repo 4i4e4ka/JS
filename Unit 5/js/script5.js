@@ -152,6 +152,170 @@
   
 // }
 
+
+
+//   Task 10
+// Кнопка b - 10 запускает функцию t10.
+// Функция должна выводить в out - 10 четные годы от 1950 до 2000
+// включительно.Разделитель - пробел.Задача решается через цикл,
+//   а четность - через шаг(равный 2).
+
+// let min = 1951;
+// let max = 2000;
+
+// document.querySelector(".btn-10").onclick = () => {
+// for (let i = min; i <= max; i += 1) {
+//   // console.log(i);
+//   if ((i % 2) == 0) {
+//     console.log(i);  
+// }
+
+
+//   } 
+  
+// }
+
+// Task 11
+// Кнопка b - 11 запускает функцию t11.Функция должна:
+// получить все div.div - 11 перебрать их с помощью цикла.
+// Обращение к div выглядит так elem[i] вывести в out - 11
+// содержимое каждого блока.
+// Разделитель - пробел.В результате должно получиться так:one 3 4 two
+
+
+// const div = document.getElementsByTagName("div");
+
+// document.querySelector(".btn-11").onclick = () => {
+
+//   let str = '';
+
+//   for (let i = 0; i < div.length; i += 1) {
+
+//     // console.log(div[i]);
+    
+//     // console.log(div[i]);
+//     // div[i].style.background = "teal";
+    
+//     const value = div[i].getAttribute('value');
+//     // console.log(value);
+
+//    str += value + " ";
+    
+// }
+//  console.log(str);
+//   }
+
+// Task 12
+// Кнопка b - 12 запускает функцию t12.
+// Функция должна: получить все div.div - 12 перебрать
+// их с помощью цикла.Обращение к div выглядит так elem[i]
+// применить к каждому elem[i].style.background = ‘orange’
+
+// const div = document.getElementsByTagName('div');
+
+// let str = " ";
+// document.querySelector(".btn-12").onclick = () => {
+
+//   for (let i = 0; i < div.length; i += 1) {
+//     console.log(div[i]);
+//     const value = div[i].getAttribute('value');
+//     console.log(value);
+//     str += value + " ";
+    
+//     const first = div[0];
+//     console.log(first);
+//     div[i].style.background = 'orange';
+//     div[0].style.background = 'green';
+//     div[div.length - 2].style.background = "teal";
+//     // div[i].style.background = 'green';
+//     div[i].style.border = '3px solid black';
+    
+//   }
+//   console.log(str);
+// }
+
+
+// Task 13
+// Кнопка b - 13 запускает функцию t13.
+// Функция должна: получить все input.i - 13
+// перебрать их с помощью цикла.Обращение к элементу выглядит
+// так elem[i] применить к каждому elem[i].value,
+// причем к value первого должно равняться 1, второго - 2,
+// третьего - 3...
+
+// const div = document.getElementsByTagName("div");
+// console.log(div);
+
+// document.querySelector(".btn-13").onclick = () => {
+
+// for (let i = 0; i < div.length; i += 1) {
+//   // console.log(div[i]);
+
+//   // const value = div[i].getAttribute('value');
+//   // console.log(value);
+  
+//   let value = div[i].getAttribute('value');
+//   for (value = 0; value < div.length; value += 1) {
+//     console.log(value);
+//   }
+  
+  
+//   }
+// }
+
+
+// Task 14 
+// let r = document.querySelectorAll('input[type="radio"]');
+// console.log(r);
+
+// document.querySelector(".btn-14").onclick = () => {
+  
+
+//   for (let i = 0; i < r.length; i += 1) {
+//     console.log(r[i].value);
+//     if (r[i].checked) {
+//       console.log(r[i].value , "вибрана опція");
+// }
+    
+//      }
+
+// }
+
+// Task 15
+// Кнопка b - 15 запускает функцию t15
+// Функция должна выводить следующую последовательность
+// в out - 15:
+
+// 10 0 9 1 8 2 7 3 6 4 5 5 4 6 3 7 2 8 1 9 0 10
+// Для вывода использовать цикл.
+
+// let str = " ";
+// document.querySelector('.btn-15').onclick = () => {
+
+//   for (let i = 10;  i >=0; i -= 1 ) {
+//     console.log(i + " ");
+
+//   }
+// for (let y = 0; y <=10; y += 1) {
+//   console.log(y + " ");  
+  
+//   }
+
+// }
+
+
+// let str = " ";
+// document.querySelector('.btn-15').onclick = () => {
+  
+//   for (let i = 10, j = 0; i >= 0; i-=1, j+=1) {
+//     str += i + ' ' + j + ' ';
+   
+//   }
+//    console.log(str);
+// }
+
+
+
 // Task 8
 // Есть input i - 81 и i - 82 куда пользователь 
 // может ввести числа больше нуля
@@ -165,13 +329,36 @@
 // 4 5 6 7 8
 // Задача решается с помощью цикла.
 
-document.querySelector('.btn-8').onclick = () => {
- 
-  let str = " ";
-  const inp1 = document.querySelector('.i-81').value;
-  const inp2 = document.querySelector('.i-82').value;  
-  for (let i = inp1; i <= inp2; i += 1) { 
-str += i + ' ';
-  }
-console.log(str);
-}
+// Solution:
+
+
+
+// Just training example for ex.8
+// let str = " "
+// document.querySelector('.btn-8').onclick = () => {
+
+//   let inpValue = document.querySelector(".i-81").value;
+  
+
+// for (let i = inpValue; i>=0; i-=1 ) {
+//   // console.log(inpValue);
+
+//   str += i + " ";
+// }
+
+//   console.log(str);
+// }
+
+
+// Task 9
+// Есть input i - 91 и i - 92 куда пользователь может ввести числа.
+// По нажатию кнопки b - 9 должна запускаться функция t9,
+//   которая выводит в out - 9 числа от меньшего введенного
+// до большего включительно, с шагом 1. Разделитель пробел.
+// Если пользователь ввел 4 и 8 и нажал кнопку, мы получим:
+
+// 4 5 6 7 8
+// если ввел 8 и 6, то получим
+// 6 7 8
+// Задача решается с помощью цикла.
+//   Подсказка - вначале делаем проверку, а потом запускаем цикл.
